@@ -36,7 +36,7 @@ public class Circunferencia {
     }
     
     public void area(){
-        System.out.println("area: "+ (3.14*(radio*radio)));
+        System.out.println("Area: "+ (3.14*(radio*radio)));
     }
     
     public void perimetro(){

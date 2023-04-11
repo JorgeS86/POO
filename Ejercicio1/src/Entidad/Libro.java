@@ -12,12 +12,26 @@ import java.util.Scanner;
  * @author jorge
  */
 public class Libro {
-    
+    /*Crear una clase llamada Libro que contenga los siguientes atributos:
+ISBN, Título, Autor, Número de páginas*/
     int ISBN;
     public String titulo;
     public String autor;
     public int numeroPaginas;
-
+//constructor vacio
+    public Libro() {
+    }
+//constructor completo
+    public Libro(int ISBN, String titulo, String autor, int numeroPaginas) {
+        this.ISBN = ISBN;
+        this.titulo = titulo;
+        this.autor = autor;
+        this.numeroPaginas = numeroPaginas;
+    }
+/*Crear un
+método para cargar un libro pidiendo los datos al usuario y luego
+informar mediante otro método el número de ISBN, el título, el autor del
+libro y el número de páginas.*/
     public void cargarLibro(){
         Scanner leer = new Scanner(System.in).useDelimiter("\n");
         
@@ -35,9 +49,9 @@ public class Libro {
         
         
     }
-
     @Override
     public String toString() {
         return "Libro{" + "ISBN=" + ISBN + ", titulo=" + titulo + ", autor=" + autor + ", numeroPaginas=" + numeroPaginas + '}';
     }
+
 }
