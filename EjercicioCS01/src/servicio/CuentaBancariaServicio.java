@@ -71,4 +71,14 @@ Validar que el usuario no saque más del 20%*/
             System.out.println("El Saldo actual es: " +CB1.getSaldoActual());
         }
     }
+    /*Método consultarSaldo: permitirá consultar el saldo disponible en la cuenta.*/
+    public void consultarSaldo(){
+        System.out.println("Su saldo es: "+CB1.getSaldoActual());
+    }
+    /*Método consultarDatos: permitirá mostrar todos los datos
+de la cuenta.*/
+    public void consultarDatos(){
+        CB1.toString();
+    }
+
 }

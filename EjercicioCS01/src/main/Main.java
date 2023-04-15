@@ -16,8 +16,10 @@ public class Main {
         
       CuentaBancariaServicio CBS1 = new CuentaBancariaServicio();
       CBS1.crearCuenta();
-      //CBS1.ingresarDinero();
-      //CBS1.retirarDinero();
-      CBS1.extraccionRapida();
+     // CBS1.ingresarDinero();
+     // CBS1.retirarDinero();
+    //  CBS1.extraccionRapida();
+      CBS1.consultarSaldo();
+      CBS1.consultarDatos();
     }
 }
