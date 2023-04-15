@@ -51,7 +51,7 @@ números y los guarda en los atributos del objeto.*/
     public void crearOperacion() {
         System.out.println("Ingrese un valor para el Número 1: ");
         this.numero1 = leer.nextInt();
-        System.out.println("Ingrese un valor para el Número 1: ");
+        System.out.println("Ingrese un valor para el Número 2: ");
         this.numero2 = leer.nextInt();
     }
 

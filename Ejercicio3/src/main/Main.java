@@ -17,7 +17,8 @@ public class Main {
         Operacion op1 = new Operacion();
 
         op1.crearOperacion();
-
+        //op1.setNumero1(30);
+        //op1.setNumero2(10);
         System.out.println("Suma: " + op1.sumar());
         System.out.println("Resta: " + op1.restar());
         System.out.println("Multiplicacion: " + op1.multiplicar());
