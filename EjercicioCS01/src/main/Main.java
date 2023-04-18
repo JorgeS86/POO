@@ -19,6 +19,7 @@ public class Main {
         Scanner leer = new Scanner(System.in).useDelimiter("\n");
         CuentaBancariaServicio CBS1 = new CuentaBancariaServicio();
         CuentaBancaria cuenta1= CBS1.crearCuenta();
+        CuentaBancaria cuenta2= CBS1.crearCuenta();
         boolean salir = false;
 
         do {
@@ -51,6 +52,7 @@ public class Main {
                     break;
                 case 5:
                     CBS1.consultarDatos(cuenta1);
+                    CBS1.consultarDatos(cuenta2);
                     break;
                 case 0:
                     System.out.println("Usted seleccionó SALIR");

@@ -45,13 +45,13 @@ public class Main {
                     CS.agregarcafe(cafe);
                     break;
                 case 0:
-                    salir = true;
                     System.out.println("Usted seleccionó Salir");
+                    salir = true;
                     break;
                 default:
                     System.out.println("La opción elegida no es válida");
             }
-        } while (salir = true);
+        } while (salir != true);
 
     }
 }
