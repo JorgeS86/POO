@@ -3,25 +3,22 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package entidades;
+package entidad;
 
 /**
  *
  * @author jorge
  */
 public class NIF {
-
     private long dni;
     private char letra;
-
-    public static char[] LETRAS_DNI = {'T', 'R', 'W', 'A', 'G', 'M', 'Y', 'F', 'P', 'D', 'X', 'B', 'N', 'J', 'Z', 'S', 'Q', 'V', 'H', 'L', 'C', 'K', 'E'};
 
     public NIF() {
     }
 
-    public NIF(long dni) {
+    public NIF(long dni, char letra) {
         this.dni = dni;
-        this.letra = calcularLetra(dni);
+        this.letra = letra;
     }
 
     public long getDni() {
@@ -39,15 +36,6 @@ public class NIF {
     public void setLetra(char letra) {
         this.letra = letra;
     }
-
-
-    private char calcularLetra(long dni) {
-        int resto = (int) (dni % 23);
-        return LETRAS_DNI[resto];
-    }
-
-    public String mostrar() {
-        String dniStr = String.format("%08d", dni);
-        return dniStr + "-" + Character.toUpperCase(letra);
-    }
+    
+    
 }

@@ -14,7 +14,7 @@ import java.util.Scanner;
  */
 public class NIFServicio {
 
-    Scanner scanner = new Scanner(System.in);
+   private Scanner scanner = new Scanner(System.in);
 
     public void crearNIF(NIF nif) {
         System.out.print("Introduce el número de DNI: ");
