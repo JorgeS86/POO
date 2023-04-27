@@ -33,10 +33,15 @@ alumno.*/
         }
         return alumnos;
     }
-    
-    public Curso crearCurso(){
+
+    /*Método crearCurso(): el método crear curso, le pide los valores 
+    de los atributos al usuario y después se le asignan a sus respectivos
+    atributos para llenar el objeto Curso. En este método invocamos 
+    al método cargarAlumnos() para asignarle valor al atributo alumnos*/
+
+    public Curso crearCurso() {
         Curso CursoAux = new Curso();
-        
+
         System.out.println("Ingrese el nombre del curso:");
         CursoAux.setNombreCurso(leer.next());
         System.out.println("Ingrese cantidad de Horas por día del curso: ");
@@ -50,20 +55,27 @@ alumno.*/
         CursoAux.setAlumnos(cargarAlumnos());
         return CursoAux;
     }
-public void mostrarCurso(Curso CursoAux){
-    System.out.println("--------------------");
-    System.out.println("Curso: "+CursoAux.getNombreCurso());
-    System.out.println("Hs x día: "+CursoAux.getCantidadHorasPorDia());
-    System.out.println("Días x semana de cursado: "+CursoAux.getCantidadDiasPorSemana());
-    System.out.println("Turno: "+CursoAux.getTurno());
-    System.out.println("Precio x hora: "+CursoAux.getPrecioPorHora());
-    System.out.println("Alumnos: "+Arrays.toString(CursoAux.getAlumnos()));
-    System.out.println("--------------------");
-}
-public void calcularGanancias(Curso CursoAux){
-    int cantAlumnos = CursoAux.getAlumnos().length;
-    System.out.println("cant alum: "+cantAlumnos);
-    double ganancias = (CursoAux.getCantidadHorasPorDia() * CursoAux.getCantidadDiasPorSemana()) * CursoAux.getPrecioPorHora() * cantAlumnos;
-    System.out.println("Las ganancia semanal de este curso es de: "+ganancias);
-}
+
+    public void mostrarCurso(Curso CursoAux) {
+        System.out.println("--------------------");
+        System.out.println("Curso: " + CursoAux.getNombreCurso());
+        System.out.println("Hs x día: " + CursoAux.getCantidadHorasPorDia());
+        System.out.println("Días x semana de cursado: " + CursoAux.getCantidadDiasPorSemana());
+        System.out.println("Turno: " + CursoAux.getTurno());
+        System.out.println("Precio x hora: " + CursoAux.getPrecioPorHora());
+        System.out.println("Alumnos: " + Arrays.toString(CursoAux.getAlumnos()));
+        System.out.println("--------------------");
+    }
+
+    /*Método calcularGananciaSemanal(): este método se encarga de calcular 
+la ganancia en una semana por curso. Para ello, se deben multiplicar la 
+cantidad de horas por día, el precio por hora, la cantidad de alumnos y
+la cantidad de días a la semana que se repite el encuentro.*/
+
+    public void calcularGanancias(Curso CursoAux) {
+        int cantAlumnos = CursoAux.getAlumnos().length;
+        System.out.println("cant alum: " + cantAlumnos);
+        double ganancias = (CursoAux.getCantidadHorasPorDia() * CursoAux.getCantidadDiasPorSemana()) * CursoAux.getPrecioPorHora() * cantAlumnos;
+        System.out.println("Las ganancia semanal de este curso es de: " + ganancias);
+    }
 }
