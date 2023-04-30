@@ -58,9 +58,11 @@ public class EstudianteService {
             }
         }
         String[] mayorP = new String[contM];
-        for (int i = 0; i < mayorP.length; i++) {
+        int contador = 0;
+        for (int i = 0; i < Est.length; i++) {
             if (Est[i].getNota() > promedio(Est)) {
-                mayorP[i] = Est[i].getNombre();
+                mayorP[contador] = Est[i].getNombre();
+                contador++;
             }
         }
         return mayorP;
