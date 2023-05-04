@@ -38,11 +38,11 @@ public class EstudianteService {
     /*Calcular y mostrar el promedio de notas de todo el curso*/
 
     public double promedio(Estudiante Est[]) {
-        int suma = 0;
+        double suma = 0;
         for (int i = 0; i < Est.length; i++) {
             suma += Est[i].getNota();
         }
-        double promedio = (double) suma / (double) Est.length;
+        double promedio = suma / (double) Est.length;
         return promedio;
         //System.out.println("El Promedio de todas las notas finales es: " + promedio);
     }
@@ -58,6 +58,7 @@ public class EstudianteService {
             }
         }
         String[] mayorP = new String[contM];
+        
         int contador = 0;
         for (int i = 0; i < Est.length; i++) {
             if (Est[i].getNota() > promedio(Est)) {

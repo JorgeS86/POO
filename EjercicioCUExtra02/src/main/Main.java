@@ -20,9 +20,9 @@ public class Main {
         AhorcadoService AS = new AhorcadoService();
         Ahorcado Ah = AS.crearJuego();
 
-        // System.out.println("Palabra: " + Arrays.toString(Ah.getBuscar()));
-        // System.out.println("intentos: " + Ah.getCantJugMax());
-        // System.out.println("La longitud de la palabra ingresada es: " + AS.longitud());
+         //System.out.println("Palabra: " + Arrays.toString(Ah.getBuscar()));
+         //System.out.println("intentos: " + Ah.getCantJugMax());
+         //System.out.println("La longitud de la palabra ingresada es: " + AS.longitud());
         //AS.buscar();
         // AS.encontradas();    
         // AS.intentos();
